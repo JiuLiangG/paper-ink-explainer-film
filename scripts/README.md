@@ -30,7 +30,10 @@ new_project.sh     复制引擎到项目目录并检查依赖
 `sudo apt-get install -y python3-cairo`（pip 装 pycairo 会失败）；`pip install --user --break-system-packages -U edge-tts pyloudnorm scipy pillow numpy`；ffmpeg。
 
 ## 性能
-14.7s 示范在 8 核上全流程约 20s。原片 5:29（~9900 帧）8 进程并行渲染。改一处只想看效果时用 `render.py still`，别全片重渲。
+14.7s 示范（`scenes_demo.py`）在 8 核上全流程约 20s。原片 5:29（~9900 帧）8 进程并行渲染。改一处只想看效果时用 `render.py still`，别全片重渲。
+
+## 仓库里的画面示例
+[`examples/demo/`](../examples/demo/) 是从《精神分析的本质》v3 **成片截取**的三段（躺椅双人、议长开幕闭幕、压抑讲解里的剪辑台），用来对照人物画法、开幕闭幕节奏和自指剪辑画面——不是 `scenes_demo.py` 冒烟测试的输出。本地验证引擎仍跑 `scenes_demo.py`。
 
 ## 原片里还有、模板没带的（需要时去原工程抄）
 - `scenes_b.py` 剪辑时间线自指装置、凝缩脸、移置房间；`scenes_c.py` 躺椅、联想链、揭示蒙太奇（×N 计数器、证据拼成门）、开门结尾完整版

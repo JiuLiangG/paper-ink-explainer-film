@@ -28,6 +28,8 @@ metadata:
 | 交付前 | `references/qa-checklist.md` ＋ `references/delivery.md` |
 | 改代码 | `scripts/README.md` |
 
+画面对照见 `examples/demo/`：三段成片截取——躺椅双人（人物怎么画）、议长开幕闭幕（节奏）、压抑讲解剪辑台（自指剪辑画面）。引擎冒烟仍用 `scripts/engine/scenes_demo.py`。
+
 ## 工作流（七个阶段，每阶段有门）
 
 ### 阶段 0 · 锁定素材与锚点

@@ -12,7 +12,7 @@
 | [CHANGELOG.md](CHANGELOG.md) | 版本记录 |
 | [references/](references/) | 开工前到交付前要读的笔记 |
 | [scripts/](scripts/) | 引擎模板与开新片脚本。用法见 [scripts/README.md](scripts/README.md) |
-| [examples/demo/](examples/demo/) | 14.7 秒端到端冒烟测试 |
+| [examples/demo/](examples/demo/) | 成片截取的三段示范（人物 / 开幕闭幕 / 剪辑画面） |
 
 `references/` 与 `SKILL.md` 里「先读哪份」对应：
 
@@ -46,8 +46,18 @@
 
 ## 示例
 
-[examples/demo/demo.mp4](examples/demo/demo.mp4) 是引擎模板的 **14.7 秒**端到端冒烟测试（两场景，见 `scripts/engine/scenes_demo.py`；`CHANGELOG.md` 记的是这次测试）。同一条片子上的静帧：
+[examples/demo/](examples/demo/) 里是三段从《精神分析的本质》v3 母带截取的短片（不是引擎冒烟测试），用来对照「想要的效果」：
 
-- [5.6 秒](examples/demo/stills/5.6.jpg)
-- [8.0 秒](examples/demo/stills/8.0.jpg)
-- [13.2 秒](examples/demo/stills/13.2.jpg)
+| 片段 | 时长 | 示范 |
+|---|---|---|
+| [01_couch.mp4](examples/demo/01_couch.mp4) | 8 s | **人物怎么画** — 躺椅双人场面（分析师坐到病人看不见的地方） |
+| [02_president.mp4](examples/demo/02_president.mp4) | 8 s | **开幕/闭幕节奏** — 议长宣布开幕→闭幕→「本来要说的，是开幕」 |
+| [03_repress_nle.mp4](examples/demo/03_repress_nle.mp4) | 10 s | **剪辑画面** — 压抑讲解里片子自己的时间线与红门 |
+
+静帧（各片段约 40% 处）：
+
+- [01_couch.jpg](examples/demo/01_couch.jpg)
+- [02_president.jpg](examples/demo/02_president.jpg)
+- [03_repress_nle.jpg](examples/demo/03_repress_nle.jpg)
+
+说明见 [examples/demo/README.md](examples/demo/README.md)。引擎端到端冒烟仍用 `scripts/engine/scenes_demo.py` 本地渲染，不必再进仓库示例目录。
